@@ -1,4 +1,8 @@
-# AndroidBuildBy
+<div align="center">
+    <img src="./resources/icons/app_icon.jpg" width="256" alt="DebugManager">
+</div>
+
+<h1 align="center">AndroidBuildBy</h1>
 
 Desktop tool for analyzing Android app tech stacks - a LibChecker alternative for your computer.
 
