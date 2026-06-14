@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./resources/icons/app_icon.jpg" width="256" alt="DebugManager">
+    <img src="./resources/icons/app_icon.png" width="128" alt="AndroidBuildBy">
 </div>
 
 <h1 align="center">AndroidBuildBy</h1>
