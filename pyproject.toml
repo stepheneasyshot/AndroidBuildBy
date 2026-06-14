@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "android-buildby"
+version = "1.0.0"
+description = "Desktop tool for analyzing Android app tech stacks"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "PySide6>=6.6.0",
+    "androguard>=3.4.0",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+android-buildby = "src.main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

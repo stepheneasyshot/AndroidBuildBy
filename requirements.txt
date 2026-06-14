@@ -1,0 +1,3 @@
+PySide6>=6.6.0
+androguard>=3.4.0
+Pillow>=10.0.0

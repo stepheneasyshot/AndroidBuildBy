@@ -1,0 +1,387 @@
+{
+  "frameworks": [
+    {
+      "name": "Flutter",
+      "category": "cross_platform",
+      "description": "Google Flutter",
+      "priority": 1,
+      "signatures": {
+        "file_paths": ["flutter_assets/", "lib/flutter_assets/", "assets/flutter_assets/"],
+        "file_patterns": ["lib/*/libflutter.so"],
+        "package_names": ["io.flutter"],
+        "dex_classes": ["Lio/flutter/app/FlutterApplication;", "Lio/flutter/embedding/engine/FlutterEngine;"]
+      }
+    },
+    {
+      "name": "React Native",
+      "category": "cross_platform",
+      "description": "Meta React Native",
+      "priority": 1,
+      "signatures": {
+        "file_paths": ["assets/index.android.bundle", "assets/index.bundle"],
+        "file_patterns": ["lib/*/libreactnativejni.so", "lib/*/libhermes.so", "assets/*.bundle"],
+        "package_names": ["com.facebook.react"],
+        "dex_classes": ["Lcom/facebook/react/ReactApplication;", "Lcom/facebook/react/ReactActivity;"]
+      }
+    },
+    {
+      "name": "Unity",
+      "category": "game_engine",
+      "description": "Unity Game Engine",
+      "priority": 1,
+      "signatures": {
+        "file_paths": ["assets/bin/Data/"],
+        "file_patterns": ["lib/*/libunity.so", "lib/*/libil2cpp.so"],
+        "package_names": ["com.unity3d"],
+        "dex_classes": ["Lcom/unity3d/player/UnityPlayerActivity;", "Lcom/unity3d/player/UnityPlayer;"]
+      }
+    },
+    {
+      "name": "Xamarin/MAUI",
+      "category": "cross_platform",
+      "description": "Microsoft Xamarin / .NET MAUI",
+      "priority": 1,
+      "signatures": {
+        "file_patterns": ["lib/*/libmonodroid.so", "lib/*/libmono-*", "lib/*/libxamarin-app.so"],
+        "package_names": ["mono.android", "mono"],
+        "dex_classes": ["Lmono/MonoPackageManager;", "Lcrc64*/MainActivity;"]
+      }
+    },
+    {
+      "name": "Cordova",
+      "category": "cross_platform",
+      "description": "Apache Cordova / PhoneGap",
+      "priority": 2,
+      "signatures": {
+        "file_paths": ["assets/www/cordova.js", "assets/www/cordova_plugins.js"],
+        "package_names": ["org.apache.cordova"],
+        "dex_classes": ["Lorg/apache/cordova/CordovaActivity;", "Lorg/apache/cordova/CordovaWebView;"]
+      }
+    },
+    {
+      "name": "Capacitor",
+      "category": "cross_platform",
+      "description": "Ionic Capacitor",
+      "priority": 2,
+      "signatures": {
+        "file_paths": ["assets/public/capacitor.js"],
+        "package_names": ["com.getcapacitor"],
+        "dex_classes": ["Lcom/getcapacitor/BridgeActivity;"]
+      }
+    },
+    {
+      "name": "Qt",
+      "category": "cross_platform",
+      "description": "Qt Framework",
+      "priority": 2,
+      "signatures": {
+        "file_patterns": ["lib/*/libQt*"],
+        "package_names": ["org.qtproject"],
+        "dex_classes": ["Lorg/qtproject/qt/android/QtActivity;"]
+      }
+    },
+    {
+      "name": "Kotlin/Native",
+      "category": "native",
+      "description": "Kotlin/Native",
+      "priority": 3,
+      "signatures": {
+        "file_patterns": ["lib/*/libknlib*"],
+        "package_names": [],
+        "dex_classes": ["Lkotlinx/coroutines/"]
+      }
+    }
+  ],
+  "sdks": [
+    {
+      "name": "Google Firebase",
+      "category": "cloud",
+      "description": "Firebase platform services",
+      "signatures": {
+        "package_names": ["com.google.firebase"],
+        "dex_classes": ["Lcom/google/firebase/FirebaseApp;"]
+      }
+    },
+    {
+      "name": "Google Play Services",
+      "category": "infrastructure",
+      "description": "Google Play Services",
+      "signatures": {
+        "package_names": ["com.google.android.gms"],
+        "dex_classes": ["Lcom/google/android/gms/common/GooglePlayServicesUtil;"]
+      }
+    },
+    {
+      "name": "Google AdMob",
+      "category": "ads",
+      "description": "Google AdMob advertising",
+      "signatures": {
+        "package_names": ["com.google.android.gms.ads"],
+        "dex_classes": ["Lcom/google/android/gms/ads/AdView;"]
+      }
+    },
+    {
+      "name": "Google Maps",
+      "category": "maps",
+      "description": "Google Maps SDK",
+      "signatures": {
+        "package_names": ["com.google.android.gms.maps"],
+        "dex_classes": ["Lcom/google/android/gms/maps/GoogleMap;"]
+      }
+    },
+    {
+      "name": "Google ML Kit",
+      "category": "ml",
+      "description": "Google ML Kit for Firebase",
+      "signatures": {
+        "package_names": ["com.google.mlkit"],
+        "dex_classes": ["Lcom/google/mlkit/"]
+      }
+    },
+    {
+      "name": "Facebook SDK",
+      "category": "social",
+      "description": "Facebook SDK",
+      "signatures": {
+        "package_names": ["com.facebook"],
+        "dex_classes": ["Lcom/facebook/FacebookSdk;"]
+      }
+    },
+    {
+      "name": "Facebook Login",
+      "category": "auth",
+      "description": "Facebook Login SDK",
+      "signatures": {
+        "package_names": ["com.facebook.login"],
+        "dex_classes": ["Lcom/facebook/login/"]
+      }
+    },
+    {
+      "name": "WeChat SDK",
+      "category": "social",
+      "description": "WeChat Open SDK",
+      "signatures": {
+        "package_names": ["com.tencent.mm.opensdk"],
+        "dex_classes": ["Lcom/tencent/mm/opensdk/"]
+      }
+    },
+    {
+      "name": "Tencent Bugly",
+      "category": "crash",
+      "description": "Tencent Bugly crash reporting",
+      "signatures": {
+        "package_names": ["com.tencent.bugly"],
+        "dex_classes": ["Lcom/tencent/bugly/"]
+      }
+    },
+    {
+      "name": "Tencent MMKV",
+      "category": "storage",
+      "description": "Tencent MMKV key-value storage",
+      "signatures": {
+        "file_patterns": ["lib/*/libmmkv.so"],
+        "package_names": ["com.tencent.mmkv"],
+        "dex_classes": ["Lcom/tencent/mmkv/MMKV;"]
+      }
+    },
+    {
+      "name": "Tencent TBS",
+      "category": "browser",
+      "description": "Tencent Browsing Service",
+      "signatures": {
+        "package_names": ["com.tencent.smtt"],
+        "dex_classes": ["Lcom/tencent/smtt/sdk/"]
+      }
+    },
+    {
+      "name": "Alipay SDK",
+      "category": "payment",
+      "description": "Alipay Mobile Payment SDK",
+      "signatures": {
+        "package_names": ["com.alipay", "com.ali.pay"],
+        "dex_classes": ["Lcom/alipay/sdk/app/"]
+      }
+    },
+    {
+      "name": "JPush",
+      "category": "push",
+      "description": "Jiguang Push Notification",
+      "signatures": {
+        "package_names": ["cn.jpush", "cn.jiguang"],
+        "dex_classes": ["Lcn/jpush/android/"]
+      }
+    },
+    {
+      "name": "Umeng Analytics",
+      "category": "analytics",
+      "description": "Umeng Analytics SDK",
+      "signatures": {
+        "package_names": ["com.umeng", "com.uc.crashsdk"],
+        "dex_classes": ["Lcom/umeng/analytics/"]
+      }
+    },
+    {
+      "name": "Baidu Maps",
+      "category": "maps",
+      "description": "Baidu Maps SDK",
+      "signatures": {
+        "package_names": ["com.baidu.mapapi", "com.baidu.lbsapi"],
+        "dex_classes": ["Lcom/baidu/mapapi/"]
+      }
+    },
+    {
+      "name": "Amap (AutoNavi)",
+      "category": "maps",
+      "description": "Amap / AutoNavi Maps SDK",
+      "signatures": {
+        "package_names": ["com.amap"],
+        "dex_classes": ["Lcom/amap/api/"]
+      }
+    },
+    {
+      "name": "ByteDance SDK",
+      "category": "social",
+      "description": "ByteDance SDK",
+      "signatures": {
+        "package_names": ["com.bytedance", "com.ss.android"],
+        "dex_classes": ["Lcom/bytedance/sdk/"]
+      }
+    },
+    {
+      "name": "OkHttp",
+      "category": "network",
+      "description": "Square OkHttp HTTP client",
+      "signatures": {
+        "package_names": ["okhttp3"],
+        "dex_classes": ["Lokhttp3/OkHttpClient;"]
+      }
+    },
+    {
+      "name": "Retrofit",
+      "category": "network",
+      "description": "Square Retrofit REST client",
+      "signatures": {
+        "package_names": ["retrofit2"],
+        "dex_classes": ["Lretrofit2/Retrofit;"]
+      }
+    },
+    {
+      "name": "Glide",
+      "category": "image",
+      "description": "Glide image loading",
+      "signatures": {
+        "package_names": ["com.bumptech.glide"],
+        "dex_classes": ["Lcom/bumptech/glide/Glide;"]
+      }
+    },
+    {
+      "name": "Picasso",
+      "category": "image",
+      "description": "Square Picasso image loading",
+      "signatures": {
+        "package_names": ["com.squareup.picasso"],
+        "dex_classes": ["Lcom/squareup/picasso/Picasso;"]
+      }
+    },
+    {
+      "name": "Coil",
+      "category": "image",
+      "description": "Coil image loading (Kotlin)",
+      "signatures": {
+        "package_names": ["coil"],
+        "dex_classes": ["Lcoil/ImageLoader;"]
+      }
+    },
+    {
+      "name": "Room",
+      "category": "database",
+      "description": "Android Jetpack Room database",
+      "signatures": {
+        "package_names": ["androidx.room"],
+        "dex_classes": ["Landroidx/room/RoomDatabase;"]
+      }
+    },
+    {
+      "name": "SQLCipher",
+      "category": "database",
+      "description": "SQLCipher encrypted SQLite",
+      "signatures": {
+        "file_patterns": ["lib/*/libsqlcipher.so"],
+        "dex_classes": ["Lnet/sqlcipher/database/SQLiteDatabase;"]
+      }
+    },
+    {
+      "name": "TensorFlow Lite",
+      "category": "ml",
+      "description": "TensorFlow Lite ML inference",
+      "signatures": {
+        "file_patterns": ["lib/*/libtensorflowlite_jni.so", "lib/*/libtflite_jni.so"],
+        "package_names": ["org.tensorflow.lite"],
+        "dex_classes": ["Lorg/tensorflow/lite/"]
+      }
+    },
+    {
+      "name": "Unity Ads",
+      "category": "ads",
+      "description": "Unity Ads SDK",
+      "signatures": {
+        "package_names": ["com.unity3d.ads"],
+        "dex_classes": ["Lcom/unity3d/ads/"]
+      }
+    },
+    {
+      "name": "AppsFlyer",
+      "category": "analytics",
+      "description": "AppsFlyer attribution analytics",
+      "signatures": {
+        "package_names": ["com.appsflyer"],
+        "dex_classes": ["Lcom/appsflyer/"]
+      }
+    },
+    {
+      "name": "Mixpanel",
+      "category": "analytics",
+      "description": "Mixpanel analytics",
+      "signatures": {
+        "package_names": ["com.mixpanel"],
+        "dex_classes": ["Lcom/mixpanel/android/"]
+      }
+    },
+    {
+      "name": "Amplitude",
+      "category": "analytics",
+      "description": "Amplitude analytics",
+      "signatures": {
+        "package_names": ["com.amplitude"],
+        "dex_classes": ["Lcom/amplitude/api/"]
+      }
+    },
+    {
+      "name": "IronSource",
+      "category": "ads",
+      "description": "IronSource ad mediation",
+      "signatures": {
+        "package_names": ["com.ironsource"],
+        "dex_classes": ["Lcom/ironsource/"]
+      }
+    },
+    {
+      "name": "AppLovin",
+      "category": "ads",
+      "description": "AppLovin SDK",
+      "signatures": {
+        "package_names": ["com.applovin"],
+        "dex_classes": ["Lcom/applovin/"]
+      }
+    },
+    {
+      "name": "Kotlin Coroutines",
+      "category": "language",
+      "description": "Kotlin Coroutines",
+      "signatures": {
+        "package_names": ["kotlinx.coroutines"],
+        "dex_classes": ["Lkotlinx/coroutines/"]
+      }
+    }
+  ]
+}
